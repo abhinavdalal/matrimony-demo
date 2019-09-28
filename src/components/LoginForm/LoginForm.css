@@ -1,0 +1,15 @@
+.LoginForm_InputGroup {
+  margin: 0.5rem;
+}
+
+.LoginForm_Label {
+  display: inline-block;
+  min-width: 6rem;
+  text-align: left;
+}
+
+
+.LoginForm_Error {
+  margin-top: .25rem;
+  color: red;
+}

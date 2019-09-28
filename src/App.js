@@ -1,6 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
+import Header from './components/Header/Header';
 import LoginScreen from './screens/LoginScreen/LoginScreen';
+import pageNotFoundScreen from './screens/pageNotFoundScreen/pageNotFoundScreen';
 import './App.css';
 
 const App = () => {
@@ -8,16 +11,13 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="App">
-        <header className="App-header">
-          <h1>Matrimony.com</h1>
-        </header>
+        <Header />
         <Switch>
-          <Route path="/test">
+          <Route exact path="/test">
             <div> TEST </div>
           </Route>
-          <Route path="/">
-            <LoginScreen />
-          </Route>
+          <Route exact path="/" component={ LoginScreen } />
+          <Route component={pageNotFoundScreen} />
         </Switch>
       </div>
     </BrowserRouter>

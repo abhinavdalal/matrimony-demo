@@ -1,0 +1,12 @@
+.Button {
+  background-color: cornflowerblue;
+  cursor: pointer;
+  color: white;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.Button[disabled] {
+  background-color: grey;
+  cursor: not-allowed;
+}

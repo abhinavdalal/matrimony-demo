@@ -1,13 +1,15 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 
+import Button from '../Button/Button';
 import logo from './logo.svg';
+import './LoginForm.css';
 
 const LoginForm = (props) => (
   <form onSubmit={props.handleSubmit}>
     <img src={logo} className="App-logo" alt="logo" />
-    <div>
-      <label>Username</label>
+    <div class="LoginForm_InputGroup">
+      <label className="LoginForm_Label">Username</label>
       <span>
         <Field
           name="username"
@@ -17,8 +19,8 @@ const LoginForm = (props) => (
         />
       </span>
     </div>
-    <div>
-      <label>Password</label>
+    <div class="LoginForm_InputGroup">
+      <label className="LoginForm_Label">Password</label>
       <span>
         <Field
           name="password"
@@ -28,9 +30,10 @@ const LoginForm = (props) => (
         />
       </span>
     </div>
-    <button type="submit" disabled={props.pristine || props.submitting}>
+    <Button type="submit" disabled={props.pristine || props.submitting || props.invalid}>
       Submit
-    </button>
+    </Button>
+    { props.authError ? <p className="LoginForm_Error">{ props.authError }</p> : null }
   </form>
 );
 
