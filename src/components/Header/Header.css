@@ -1,0 +1,26 @@
+.Header {
+  display: block;
+  min-height: 2.5rem;
+  background-color: #282c34;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.Header_Button {
+  float: left;
+  margin-left: 0.5rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+
+.Header_Heading {
+  color: white;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.Header_Heading h3 {
+  margin: unset;
+  padding: 0.5rem;
+}

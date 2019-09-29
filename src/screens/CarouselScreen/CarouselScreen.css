@@ -11,3 +11,16 @@
 .CarouselScreen_Select {
   min-width: 3rem;
 }
+
+.CarouselScreen_Carousel {
+  display: block;
+  padding: 0.5rem;
+  width: 95vw;
+}
+
+.CarouselScreen_CarouselItem {
+  width: 5rem;
+  height: 5rem;
+  border: 0.1rem solid black;
+  margin: 0.5rem;
+}

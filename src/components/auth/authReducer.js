@@ -1,7 +1,8 @@
 import {
   LOGIN_TRY,
   LOGIN_SUCCESS,
-  LOGIN_ERROR
+  LOGIN_ERROR,
+  LOGOUT
 } from './authActions';
 
 const defaultState = {
@@ -23,6 +24,8 @@ export default (state = defaultState, action) => {
         isAuthenticated: false,
         authError: action.payload.error
       }
+    case LOGOUT:
+      return defaultState;
     case '@@redux-form/CHANGE':
       return {
         ...state,

@@ -16,7 +16,10 @@ export default (state = defaultState, action) => {
           history: [ ...state.history, action.payload.length ]
         };
       }
-      return state;
+      return {
+        length: 0,
+        history: state.history
+      };
     default:
       return state;
   }
