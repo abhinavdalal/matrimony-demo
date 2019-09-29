@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Header from './components/Header/Header';
 import LoginScreen from './screens/LoginScreen/LoginScreen';
+import CarouselScreen from './screens/CarouselScreen/CarouselScreen';
 import pageNotFoundScreen from './screens/pageNotFoundScreen/pageNotFoundScreen';
 import './App.css';
 
@@ -13,6 +14,7 @@ const App = () => {
       <div className="App">
         <Header />
         <Switch>
+          <Route exact path="/carousel" component={ CarouselScreen } />
           <Route exact path="/test">
             <div> TEST </div>
           </Route>

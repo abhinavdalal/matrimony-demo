@@ -8,7 +8,7 @@ import './LoginForm.css';
 const LoginForm = (props) => (
   <form onSubmit={props.handleSubmit}>
     <img src={logo} className="App-logo" alt="logo" />
-    <div class="LoginForm_InputGroup">
+    <div className="LoginForm_InputGroup">
       <label className="LoginForm_Label">Username</label>
       <span>
         <Field
@@ -19,7 +19,7 @@ const LoginForm = (props) => (
         />
       </span>
     </div>
-    <div class="LoginForm_InputGroup">
+    <div className="LoginForm_InputGroup">
       <label className="LoginForm_Label">Password</label>
       <span>
         <Field

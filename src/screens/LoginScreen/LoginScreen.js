@@ -20,13 +20,13 @@ const LoginScreen = (props) => {
     // should call api via saga here but only front end demo for now
     if (username==='shaadi' && password==='123') {
       dispatchLoginSuccess();
-      history.push('/test');
+      history.push('/carousel');
     } else {
       dispatchLoginError({error: 'invalid credentials'})
     }
   };
 
-  return isAuthenticated ? <Redirect to="/test" /> 
+  return isAuthenticated ? <Redirect to="/carousel" /> 
     : <LoginForm authError={authError} onSubmit={simulateLogin}/>;
 }
 

@@ -2,9 +2,11 @@ import { createStore, combineReducers } from 'redux';
 import { reducer as formReducer } from 'redux-form';
 
 import authReducer from './components/auth/authReducer';
+import CarouselReducer from './components/Carousel/CarouselReducer';
 
 const rootReducer = combineReducers({
   auth: authReducer,
+  carousel: CarouselReducer,
   form: formReducer
 });
 

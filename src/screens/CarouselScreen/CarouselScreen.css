@@ -1,0 +1,13 @@
+.CarouselScreen_Dropdown {
+  margin: 1.5rem;
+}
+
+.CarouselScreen_Label {
+  display: inline-block;
+  min-width: 6rem;
+  text-align: left;
+}
+
+.CarouselScreen_Select {
+  min-width: 3rem;
+}
