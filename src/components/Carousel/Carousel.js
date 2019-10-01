@@ -28,6 +28,8 @@ export default (props) => {
   return (
     <Carousel
       responsive={ responsive }
+      infinite
+      // centerMode
       showDots={ false }
       arrows
       containerClass="Carousel_Container"
