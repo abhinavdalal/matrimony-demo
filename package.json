@@ -2,6 +2,7 @@
   "name": "matrimony-demo",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://abhinavdalal.github.io/matrimony-demo/",
   "dependencies": {
     "lodash": "^4.17.15",
     "number-to-words": "^1.2.4",
